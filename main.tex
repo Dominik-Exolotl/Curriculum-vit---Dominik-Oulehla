@@ -2,6 +2,8 @@
 % try out different fonts: classic, fira, raleway, chivo
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{svg}
+\usepackage{xcolor}
 
 % ------------------------------------------------------------------------------------
 % you can try out different fonts here by commenting the following lines in and out
@@ -15,8 +17,7 @@
 
 
 \usepackage{beuron}
-\usepackage{LobsterTwo}%if not suposed to be main font, load other main font after this
-
+%\usepackage{LobsterTwo}%if not suposed to be main font, load other main font after this
 
 
 %------------------------------------------------------------------ Variablen
@@ -25,11 +26,12 @@
 \newlength{\leftcolwidth}
 \setlength{\leftcolwidth}{0.48\textwidth}
 \setlength{\rightcolwidth}{0.47\textwidth}
+% \colorlet{shadecolor}{gray!40}
 
 %------------------------------------------------------------------
-\title{modern-simple-CV}
-\author{\LaTeX{} Ninja}
-\date{August 2019}
+\title{CV-Dominik-Oulehla}
+\author{Dominik Oulehla}
+\date{November 2024}
 
 \pagestyle{empty}
 \begin{document}
@@ -46,7 +48,7 @@
 
 \begin{minipage}[t]{0.21\textwidth}
 \vspace{0pt} % Trick for alignment
-\includegraphics[width=\textwidth]{jack.jpg}\hspace{1em}
+\includegraphics[width=\textwidth]{"Profile picture - hidden.jpg"}\hspace{1em}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.77\textwidth}
@@ -56,21 +58,23 @@
 \begin{minipage}[t]{0.4\textwidth}
 \vspace{0pt} % Trick for alignment
 % here the fancy font can be taken out by removing \LobsterTwo
-{\par\centering\huge\LobsterTwo{Jack Sparrow}} \\[0.3cm]
-\faGlobe~ Nationality: english\\
-\faBirthdayCake~ 1690 \\
-\faMapMarker~ on a ship \\
+{\par\centering\huge\textsf{Dominik Oulehla}} \\[0.3cm]
+\faBirthdayCake~ 12. 2. 2003 \\
+\faMapMarker~ Velké Meziříčí / Brno \\
 
 {\small
-\faGraduationCap~ \underline{Titles:} Dr. Dr. Captain \\
-\faCommentsO~ \underline{Languages:} \emph{English} C2, \emph{French} B2.}
+ asdf\\
+}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.55\textwidth}
 \vspace{0pt} % Trick for alignment
-\faPhone~ 0999/999 6767400 \\
-\faAt~ \protect\url{jack@sparrow.com} \\
+\faPhone~ 702730830 \\ \\
+\large
+\faAt~ \protect\url{domoul@seznam.cz}\\
+\includesvg[height=11pt]{SKAUT_logo_netext.svg} \protect\url{bourak@skaut.cz} \\
+\includesvg[height=11pt]{fimu.svg} \protect\url{536396@mail.muni.cz} \normalsize\\
 
-\faEnvelopeO~ The Black Pearl \\ 
+\faEnvelopeO~ Hrbov 3, Velké Meziříčí \\ 
 \faMapMarker~ Tortuga \\
 
 %\aiAcademiaSquare 
