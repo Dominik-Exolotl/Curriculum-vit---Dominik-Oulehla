@@ -1,0 +1,18 @@
+% Začátek preambule.
+\documentclass{article}
+\usepackage[resetfonts]{cmap}
+\usepackage{lmodern}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pdfpages} % Balík definující příkazy pro vkládání PDF souborů do 
+                      % dokumentu.
+\usepackage{hyperref}
+
+\begin{document}
+
+\includepdf[pages=-]{main.pdf}
+
+\includepdf[pages=-]{finals_thesis.pdf}
+
+\end{document}

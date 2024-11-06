@@ -16,3 +16,9 @@ finals_thesis.out
 finals_thesis.synctex.gz
 .gitignore
 pdflatex23664.fls
+credit.out
+credit.synctex.gz
+credit.log
+credit.fls
+credit.fdb_latexmk
+credit.aux
