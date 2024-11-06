@@ -8,3 +8,11 @@ main.pdf
 main.bbl
 main.bcf
 main.run.xml
+finals_thesis.aux
+finals_thesis.fdb_latexmk
+finals_thesis.fls
+finals_thesis.log
+finals_thesis.out
+finals_thesis.synctex.gz
+.gitignore
+pdflatex23664.fls
