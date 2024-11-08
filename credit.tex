@@ -8,11 +8,16 @@
 \usepackage{pdfpages} % Balík definující příkazy pro vkládání PDF souborů do 
                       % dokumentu.
 \usepackage{hyperref}
+\usepackage{makeidx}
 
 \begin{document}
 
 \includepdf[pages=-]{main.pdf}
 
 \includepdf[pages=-]{finals_thesis.pdf}
+
+\input{main.ind}
+\renewcommand{\indexname}{}
+\input{finals_thesis.ind}
 
 \end{document}

@@ -3,12 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1cm, a4paper]{geometry}
 \usepackage[czech]{babel}
-\usepackage[backend=biber,
-            style=alphabetic,
-            maxnames=5,
-            alldates=iso,
-            seconds=true]{biblatex} % copied from PB029 materials
-\addbibresource{databaze-literatury.bib}
+\usepackage{makeidx}
+\makeindex
 \usepackage{svg}
 \usepackage{xcolor}
 \usepackage{makecell}
@@ -114,7 +110,7 @@
 
 \begin{minipage}[t]{\leftcolwidth}
     \normalsize
-    \section*{Pracovní zkušenosti}
+    \section*{Pracovní zkušenosti}\index{Pracovní zkušenosti}
     \begin{tabular}{r| p{0.6\textwidth} c}
         \cvevent{2018}{McDonald's Česká republika}{Kuchyň a servis}{Stránecká Zhoř}{}{graphics/blank.png} \\
         \cvevent{\makecell[tr]{2020-- \\ Současnost}}{Abellio s. r. o.}{Částečný úvazek}{Velké Meziříčí}{Výsadba a údržba sadů, parků, luk, živých plotů, údržba chráněných stepních a mokřadních lokalit, údržba lesních školek}{graphics/blank.png} \\
@@ -122,7 +118,7 @@
     \end{tabular}
     \vspace{3em}
 
-    \section*{Vzdělání}
+    \section*{Vzdělání}\index{Vzdělání}
     \begin{tabular}{r| p{0.6\textwidth} c}
         \cvevent{\makecell[tr]{2022-- \\ Současnost}}{Fakulta informatiky}{Masarykova univerzita}{Brno}{Informatika - zaměření vizuální informatika}{svg-inkscape/fimu_svg-tex.pdf} \\
     \end{tabular}
@@ -131,7 +127,7 @@
 \end{minipage}
 
 \begin{minipage}[t]{\leftcolwidth}
-    \section*{\large{Certifikáty a dekrety}}
+    \section*{\large{Certifikáty a dekrety}}\index{Certifikáty a dekrety}
     \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
         2021 & Řidičský průkaz B \\
         2021 & CAE certifikát \\
@@ -143,7 +139,7 @@
 \vspace{1em}
 
 \begin{minipage}[t]{\leftcolwidth}
-    \section*{\large{Jazyky}}
+    \section*{\large{Jazyky}}\index{Jazyky}
     \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
         Čeština & C2 (rodný jazyk)\\
         Angličtina & C2 \\
@@ -154,7 +150,7 @@
 
 \begin{minipage}[t]{0.885\leftcolwidth}
     \vspace{-10pt}
-    \section*{Junák - český skaut}
+    \section*{Junák - český skaut}\index{Junák - český skaut}
     \normalsize
     \begin{tabular}{r| p{0.685\textwidth}}
         \cveventfour{2018--2024}{12. oddíl střediska Velké Meziříčí}{Vedoucí družiny Gepardů}{Vedení družiny chlapců od věku vlčat (\textasciitilde 8 let) do roverského věku (\textasciitilde 15 let)} \\
@@ -172,7 +168,7 @@
 \end{minipage}
 
 \begin{minipage}[t]{\leftcolwidth}
-    \section*{\large{Jiné}}
+    \section*{\large{Jiné}}\index{Jiné zkušenosti}
     \small
     \begin{tabular}{r| p{0.6\textwidth} c}
         \cveventtinydescr{\makecell[tr]{2009--\\Současnost}}{Pomoc na rodinném statku}{Rodina Oulehlova z Hrbova}{zahrada, sady, pole, lesy, chovná zvěř}{graphics/blank.png}\\
@@ -188,7 +184,7 @@
 \switchcolumn
 
 \begin{minipage}[t]{\rightcolwidth}
-    \section*{Projekty}
+    \section*{Projekty}\index{Projekty}
     \normalsize
     \begin{tabular}{r| p{0.6\textwidth} c}
         \cveventtinydescr{\makecell[tr]{2021--\\2022}}{Pirates of the 31st century}{Maturitní práce}{Jednoduchá idle hra v Pythonu bez použití Pygame, závěrečný projekt do informatiky na Gymnáziu Velké Meziříčí}{graphics/gvm-logo-RGB.jpg} \\
@@ -201,7 +197,7 @@
 \end{minipage}
 \vspace{2em}
 
-\section{Programování} 
+\section{Programování}\index{Programovací schopnosti}
 
 
     \begin{tabular}{>{\raggedleft}p{0.25\rightcolwidth}| c l}
