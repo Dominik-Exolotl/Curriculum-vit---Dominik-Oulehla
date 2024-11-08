@@ -5,28 +5,38 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{url}
+\usepackage[backend=biber,
+            style=alphabetic,
+            maxnames=5,
+            alldates=iso,
+            seconds=true]{biblatex} % Seznam literatury bude vygenerován 
+                                    % BibLaTeXem.
+\addbibresource{databaze-literatury.bib} % Seznam literatury bude vygenerován 
+                             % ze zdrojů umístěných v souboru 
+                             % databaze-literatury.bib.
 
 \begin{document}
 \setcounter{page}{3}
 \setcounter{section}{1}
 \section{Teoretická část}
 \subsection{Videohry}
-Videohry jsou neustále rostoucí zábavní médium, přinášející výzvy a~příběhy, nebo dokonce fungující jako umělecká díla. Jako platforma mají videohry téměř neomezené možnosti zpracovávat a~být zpracovávány tak, jak si přeje/přejí jejich autor/autoři. Proto taky bylo k~roku 2019 vydáno přes 1,1 milionu videoher, a~proto se také odhaduje, že bylo na světě k~roku 2021 3,2 miliard hráčů videoher.
+Videohry jsou neustále rostoucí zábavní médium, přinášející výzvy a~příběhy, nebo dokonce fungující jako umělecká díla. Jako platforma mají videohry téměř neomezené možnosti zpracovávat a~být zpracovávány tak, jak si přeje/přejí jejich autor/autoři. Proto taky bylo k~roku 2019 vydáno přes 1,1 milionu videoher \cite{games_number}, a~proto se také odhaduje, že bylo na světě k~roku 2021 3,2 miliard hráčů videoher. \cite{gamers}
 \subsubsection{Herní průmysl}
 Herní průmysl zahrnuje vývoj a~prodej her, monetizace ve hrách, případně i~výdělek z~reklam ve videohrách.
-Herní průmysl se řadí na druhé místo v~zábavním průmyslu, co se výdělku týče, s~výdělkem 160 miliard dolarů za rok 2020. Toto také ukazuje, že růst herního průmyslu nebyl výrazně zpomalen pandemií coronaviru, spíše naopak (ačkoliv vývoj mnoha her byl zpomalen nebo pozastaven). Růst herního průmyslu je také nejkonzistentněji a~zároveň nejrychleji rostoucí z~celého zábavního průmyslu.
+Herní průmysl se řadí na druhé místo v~zábavním průmyslu, co se výdělku týče, s~výdělkem 160 miliard dolarů za rok 2020. \cite{media_revenue} Toto také ukazuje, že růst herního průmyslu nebyl výrazně zpomalen pandemií coronaviru, spíše naopak (ačkoliv vývoj mnoha her byl zpomalen nebo pozastaven). Růst herního průmyslu je také nejkonzistentněji a~zároveň nejrychleji rostoucí z~celého zábavního průmyslu.
 Hry se podle počtu vývojářů dělí na dvě skupiny – tzv. indie a~AAA (triple-A). Zatímco triple-A hry jsou vyvíjeny vývojářskými firmami se stovkami až tisícovkami zaměstnanců, indie hry mohou být vytvořeny třeba i~jedním vývojářem (jako právě v~případě Pirates of the 31st century). Jsou to právě indie hry, které přinášejí do jistot propracovaných tripla-A her změnu, právě ony vymýšlí nové mechaniky a~posouvají hranice videoher.
 \subsubsection{Historie videoher}
 První videohry začali být vytvářeny v~40. letech 20. století. V~té době ještě nebylo možné, aby hra byla jen software přehráván na jiném zařízení, ale každá hra potřebovala svůj vlastní hardware. Tento přístup vedl ke vzniku arkádových videoher – automatů, na kterých mohli lidé hrát videohru, ke které byl automat určen. Arkádové videohry a~herny ve kterých se videohry mohli hrát dominovaly hernímu průmyslu od zveřejnění hry Pong od Atari v~1972 až do poloviny 80. let. Arkády zažily opětovný růst od 90. let po nultá léta 21. století.
 Arkádové hry upadly kvůli rozšíření herních konzolí, které začali vznikat už v~70. letech, a~snižování ceny osobních počítačů, pro které byly hry vytvářené už od 50. let. Počítače a~konzole jsou stále nejvýkonnější zařízení na hraní her, proto jsou také počítačové a~konzolové hry dodnes to, co si lidé představí pod pojmem videohra.
-Obrovské zvětšení zažil videoherní průmysl v~10. letech 21. století. Díky zvětšujícímu se přístupu k~internetu a~možnosti hrát hry na něm uložené a~díky neustále se zvyšujícímu počtu lidí vlastnících chytrý telefon se vytvořili dva obrovské trhy s~videohrami – online hry a~mobilní hry, které už výdělkem překonali polovinu všech výdělků herního průmyslu.
+Obrovské zvětšení zažil videoherní průmysl v~10. letech 21. století. Díky zvětšujícímu se přístupu k~internetu a~možnosti hrát hry na něm uložené a~díky neustále se zvyšujícímu počtu lidí vlastnících chytrý telefon se vytvořili dva obrovské trhy s~videohrami – online hry a~mobilní hry, které už výdělkem překonali polovinu všech výdělků herního průmyslu. \cite{games_revenue}
 \subsubsection{Žánry her, rozdělení her}
 Videohry se dělí dvěma způsoby: podle platformy a~podle žánru.
 Rozdělení her podle platformy je velice přímočaré – dělíme je na arkádové, počítačové, konzolové, online a~mobilní
 Podle žánru se hry dělí jednak podle způsobu hraní na akční, střílečky, RPG, sportovní, adventury, bojové, závodní, strategické a~mnoho dalších, menších (jako třeba clicker hry).Toto rozdělení se dál větví na subžánry podle různých kritérií (například strategie na tahové a~realtime, nebo střílečky na first-person a~third-person, ale i~na taktické, battle royale a~dále). Jednak se ale hry dělí i~na tématické žánry, podobně jako ostatní média, na sci-fi, fantasy, válečné, historické, hororové, či dokonce romantické.
 \paragraph{Incremental (Clicker) / idle hry}
-Clicker je žánr hlavně počítačových, mobilních a~online her, jehož hlavním hracím prvkem je klikání, obvykle do té doby, než si klikáním hráč vydělal dost měny na nástroj, který bude klikat za něj. Obvykle také následuje možnost vylepšovat si klikání i~již zmíněné nástroje.
-První clicker hra, Progress quest, byla vytvořena v~roce 2002, jako parodie „grindu“ (zdánlivě nekonečného získávání surovin, herní měny a~zkušeností) ve hrách žánru MMORPG (online hry na postavy pro obrovské množství hráčů). Největší popularitu ale clicker hry získali s~vydáním hry Cookie Clicker od vývojáře Orteil v~roce 2013 a~dále her jako Clicker Heroes (2014, Playsaurus), která jako nástroje pro nahrazení klikání používá různé hrdiny, kteří dále mají schopnosti, a~AdVenture Capitalist (2015, Hyper Hippo Games), která oproti Progress quest paroduje kapitalismus a~která má místo nástrojů na klikání nástroje na kupování dalších nástrojů (exponenciální růst místo lineárního)
+Clicker je žánr hlavně počítačových, mobilních a~online her, jehož hlavním hracím prvkem je klikání, obvykle do té doby, než si klikáním hráč vydělal dost měny na nástroj, který bude klikat za něj. \cite{idle_games} Obvykle také následuje možnost vylepšovat si klikání i~již zmíněné nástroje.
+První clicker hra, Progress quest, \cite{idle_games} byla vytvořena v~roce 2002, jako parodie „grindu“ (zdánlivě nekonečného získávání surovin, herní měny a~zkušeností) ve hrách žánru MMORPG (online hry na postavy pro obrovské množství hráčů). Největší popularitu ale clicker hry získali s~vydáním hry Cookie Clicker od vývojáře Orteil v~roce 2013 a~dále her jako Clicker Heroes (2014, Playsaurus), která jako nástroje pro nahrazení klikání používá různé hrdiny, kteří dále mají schopnosti, a~AdVenture Capitalist (2015, Hyper Hippo Games), která oproti Progress quest paroduje kapitalismus a~která má místo nástrojů na klikání nástroje na kupování dalších nástrojů (exponenciální růst místo lineárního)
 Hry, ve kterých je klikání – a~hráčova přítomnost obecně – zapotřebí naprosto minimálně, se nazývají idle (z~anglického idle = líný). 
 \paragraph{Tower defense hry}
 Tower defense je subžánr strategických her, v~nichž je hráčovým cílem zabránit protivnickým jednotkám, putujících po předem určené trajektorii, dosáhnout konce trasy, a~to pomocí různý obranných budov -> věží (angl. tower = věž)
@@ -43,6 +53,8 @@ Objektově orientované programování je takové programování, které při sv
 Je mnoho programovacích jazyků, mezi jejichž paradigmata patří právě OOP: Java, C++, C\#, Visual Basic, Python, Rust
 \subsubsection{Python}
 Python je multiplatformní, multiparadigmatický programovací jazyk vyšší úrovně, poprvé vydaný v~roce 1991 programátorem Guidem van Rossumem. Je možné ho používat jak v~operačním systému Windows, tak v~Linuxu, Unixu, macOS a~dokonce Androidu. Je typický svou jednoduchostí, jednoznačností a~čitelností. Proto je nyní často používán jako první programovací jazyk mladých programátorů.
-Ve svém zápise má Python méně konvencí než jiné jazyky, dokonce poskytuje dynamickou kontrolu datových typů, tedy je možné v~běhu programu v~jedné proměnné prostřídat číslo, charakter a~třeba i~dvojici seznamů. Přesto má ale Python jasně napsaná pravidla, tzv. PEP (Python Enhancement Proposal), která zajišťují čitelnost kódu, ne však jeho fungování (kód by fungoval i~bez dodržení těchto pravidel). Tato pravidla jsou například: Pro odsazování používat 4 mezery, ne tabulátor (ne velice populární pravidlo); kód má být psaný kódováním UTF-8, maximální délka řádku je 79 ad. 
+Ve svém zápise má Python méně konvencí než jiné jazyky, dokonce poskytuje dynamickou kontrolu datových typů, tedy je možné v~běhu programu v~jedné proměnné prostřídat číslo, charakter a~třeba i~dvojici seznamů. Přesto má ale Python jasně napsaná pravidla, tzv. PEP (Python Enhancement Proposal), která zajišťují čitelnost kódu, ne však jeho fungování (kód by fungoval i~bez dodržení těchto pravidel). Tato pravidla jsou například: Pro odsazování používat 4 mezery, ne tabulátor (ne velice populární pravidlo); kód má být psaný kódováním UTF-8, maximální délka řádku je 79 ad. \cite{python}
+
+\printbibliography[heading=bibintoc]
 
 \end{document}
