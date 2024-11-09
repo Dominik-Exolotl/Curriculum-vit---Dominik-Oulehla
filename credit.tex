@@ -1,25 +1,25 @@
-% Začátek preambule.
-\documentclass{article}
+\DocumentMetadata{uncompress}  % Aktivuj dekompresi PDF výstupu, která
+                               % je potřeba pro správnou funkci balíčku "newpax"% Začátek preambule.
+\documentclass{minimal}
 \usepackage[resetfonts]{cmap}
 \usepackage{lmodern}
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{pdfpages} % Balík definující příkazy pro vkládání PDF souborů do 
-                      % dokumentu.
-\usepackage{hyperref}
+\usepackage{pdfpages}
 \usepackage{imakeidx}
-\usepackage{multicol}
+% \directlua{require("newpax")}  % Načti luový modul "newpax"
+\usepackage{newpax}          
+\newpaxsetup{usefileattributes}
+\usepackage[pdfusetitle]{hyperref}
 
 \begin{document}
+% fit index onto the last page (maybe templatesize)
+% also fix links
+% \directlua{newpax.writenewpax("main")}
 
 \includepdf[pages=-]{main.pdf}
 
-\includepdf[pages=1-2]{finals_thesis.pdf}
-
-\includepdf[pages=3]{finals_thesis.pdf}
-
-\input{main.ind}
-\renewcommand{\indexname}{}
-\input{finals_thesis.ind}
+% \directlua{newpax.writenewpax("finals_thesis")}
+\includepdf[pages=1-3]{finals_thesis.pdf}
 \end{document}
