@@ -6,7 +6,7 @@
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{pdfpages}
+\usepackage[linktodoc]{pdfpages}
 \usepackage{imakeidx}
 % \directlua{require("newpax")}  % Načti luový modul "newpax"
 \usepackage{newpax}          
@@ -20,6 +20,6 @@
 
 \includepdf[pages=-]{main.pdf}
 
-% \directlua{newpax.writenewpax("finals_thesis")}
+\directlua{newpax.writenewpax("finals_thesis")}
 \includepdf[pages=1-3]{finals_thesis.pdf}
 \end{document}
