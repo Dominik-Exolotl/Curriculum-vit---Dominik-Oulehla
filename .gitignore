@@ -39,3 +39,7 @@ odplist.fdb_latexmk
 odplist.fls
 odplist.log
 odplist.synctex.gz
+credit.bbl
+credit.bcf
+credit.idx
+credit.run.xml
